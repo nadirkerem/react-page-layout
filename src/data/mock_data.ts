@@ -5,45 +5,36 @@ import photo4 from "../assets/images/anon-4.jpg";
 import photo5 from "../assets/images/anon-5.jpg";
 import photo6 from "../assets/images/anon-6.jpg";
 
-interface IData {
-  id: number;
-  name: string;
-  photo: string | null;
-  position: string;
-  call_office: string;
-  call_mobile: string;
-  sms: string;
-  email: string;
-}
+import { Employee } from "@/types/Employee";
 
-const data: IData[] = [
+const data: Employee[] = [
   {
     id: 1,
     name: "Nicolas Turner",
     photo: photo1,
     position: "Software Engineer",
-    call_office: "825-650-7029",
-    call_mobile: "983-360-3441",
+    callOffice: "825-650-7029",
+    callMobile: "983-360-3441",
     sms: "908-507-9716",
     email: "nturner@php.net",
   },
   {
     id: 2,
-    name: "Adriana Wormald",
+    name: "Emma Wormald",
     photo: photo2,
     position: "Geological Engineer",
-    call_office: "595-982-5022",
-    call_mobile: "572-619-5653",
+    callOffice: "595-982-5022",
+    callMobile: "572-619-5653",
     sms: "763-443-7783",
-    email: "awormald1@youku.com",
+    email: "ewormald1@youku.com",
   },
   {
     id: 3,
     name: "Rico Pacheco",
     photo: photo3,
     position: "Cost Accountant",
-    call_office: "782-975-6500",
-    call_mobile: "181-802-6561",
+    callOffice: "782-975-6500",
+    callMobile: "181-802-6561",
     sms: "330-644-8960",
     email: "rpacheco@opera.com",
   },
@@ -52,8 +43,8 @@ const data: IData[] = [
     name: "Albert Montgomery",
     photo: photo4,
     position: "Internal Auditor",
-    call_office: "865-275-8585",
-    call_mobile: "134-381-1455",
+    callOffice: "865-275-8585",
+    callMobile: "134-381-1455",
     sms: "451-800-6669",
     email: "albmontgomery@umn.edu",
   },
@@ -62,8 +53,8 @@ const data: IData[] = [
     name: "Carissa Villanueva",
     photo: photo5,
     position: "Registered Nurse",
-    call_office: "376-782-8447",
-    call_mobile: "332-344-5113",
+    callOffice: "376-782-8447",
+    callMobile: "332-344-5113",
     sms: "567-770-5698",
     email: "cvillanueva@twitpic.com",
   },
@@ -72,8 +63,8 @@ const data: IData[] = [
     name: "Emilia Jaume",
     photo: photo6,
     position: "Pharmacist",
-    call_office: "757-819-4319",
-    call_mobile: "827-341-8640",
+    callOffice: "757-819-4319",
+    callMobile: "827-341-8640",
     sms: "152-363-8547",
     email: "ejaume5@nsw.gov.au",
   },

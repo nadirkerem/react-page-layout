@@ -1,5 +1,16 @@
-function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
-}
+import { useState } from "react";
+import EmployeePage from "./components/EmployeePage";
+import Homepage from "./components/Homepage";
 
-export default App;
+export default function App() {
+  const [currentEmployeeID, setCurrentEmployeeID] = useState<number>(1);
+
+  return (
+    <div className="flex h-screen items-center justify-center">
+      <div className="flex w-[800px] border border-black">
+        <Homepage />
+        <EmployeePage currentEmployee={currentEmployeeID} />
+      </div>
+    </div>
+  );
+}
