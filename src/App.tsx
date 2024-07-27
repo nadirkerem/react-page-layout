@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <div className="flex h-screen cursor-default items-center justify-center">
-      <div className="flex w-[800px] border border-black">
+      <div className="flex w-[800px] border">
         <Homepage setEmployee={setCurrentEmployeeID} />
         <EmployeePage currentEmployee={currentEmployeeID} />
       </div>
